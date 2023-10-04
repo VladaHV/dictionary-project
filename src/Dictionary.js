@@ -14,7 +14,7 @@ export default function Dictionary() {
 
     //documentation: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+	  axios.get(apiUrl).then(handleResponse);
   }
 
   function handleKeywordChange(event) {
@@ -33,7 +33,7 @@ export default function Dictionary() {
             className="col-4"
           />
           <input
-            type="button"
+            type="submit"
             value="Search"
             className="btn btn-primary col-2"
           />
