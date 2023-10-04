@@ -13,7 +13,14 @@ export default function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          <small>Coded by Vlada Honchar</small>
+          <small>
+            Coded by{" "}
+            <a href="https://gregarious-figolla-9cbc1d.netlify.app/">
+              Vlada Honchar
+            </a>{" "}
+            and is open-sourced on{" "}
+            <a href="https://github.com/VladaHV/dictionary-project">GitHub</a>
+          </small>
         </footer>
       </div>
     </div>

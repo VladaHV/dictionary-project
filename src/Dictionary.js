@@ -14,10 +14,23 @@ export default function Dictionary() {
 	};
 
 	return (
-		<div className="Dictionary">
-			<form onSubmit={search}>
-				<input type="search" autoFocus={true} onChange={handleKeywordChange} />
-			</form>
-		</div>
-	);
+    <div className="Dictionary">
+      <form className="card " onSubmit={search}>
+        <div className="row justify-content-center">
+          <input
+            type="search"
+            placeholder="Type for searching"
+            autoFocus={true}
+            onChange={handleKeywordChange}
+            className="col-4"
+          />
+          <input
+            type="button"
+            value="Search"
+            className="btn btn-primary col-2"
+          />
+        </div>
+      </form>
+    </div>
+  );
 }
