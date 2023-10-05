@@ -1,15 +1,15 @@
 import React from "react";
 import Meaning from "./Meaning";
-import "./Results.css"
+import Phonetics from "./Phonetics";
+import "./Results.css";
 
 export default function Results(props) {
+  // console.log(props.results);
   if (props.results) {
     return (
       <div className="Results mx-5">
-        <h2>
-          {props.results.word} {props.results.phonetic}
-        </h2>
-
+        <h2 className="mb-4">{props.results.word}</h2>
+        <Phonetics props={props.results} />
         <div className="accordion" id="accordionExample">
           {props.results.meanings.map(function (meaning, index) {
             return (
