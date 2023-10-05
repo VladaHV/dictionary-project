@@ -1,14 +1,11 @@
-import logo from "./logo.png";
+// import logo from "./animation.gif";
 import "./App.css";
 import Dictionary from "./Dictionary";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="App mt-5">
       <div className="container">
-        <header className="App-header">
-          <img src={logo} className="App-logo img-fluid" alt="logo"></img>
-        </header>
         <main>
           <Dictionary />
         </main>

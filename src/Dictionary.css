@@ -1,7 +1,9 @@
-.Dictionary {
+.Dictionary h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
 }
 
-.card {
-	border: none;
-
+.img {
+  /* max-width: 200px; */
+  margin: 0 auto;
 }
