@@ -1,4 +1,22 @@
 .Phonetics {
-	font-size:x-large;
-	
+  font-size: 20px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+  background: white;
+}
+
+.Phonetics .btn {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-color: #6f6274;
+  margin-right: 10px;
+}
+
+.Phonetics .btn:hover
+ {
+  background-color: #6f6274;
+  color: white;
+}
+
+.Phonetics .icon {
+  color: #6f6274;
 }

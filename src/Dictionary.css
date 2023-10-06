@@ -8,3 +8,15 @@
   height: 75%;
   margin: 0 auto;
 }
+
+.input-str {
+	border-radius: 6px;
+	border: 1px solid #ddd;
+	color: #333;
+	font-weight: 800;
+}
+
+.input-btn {
+		font-weight: 800;
+
+}

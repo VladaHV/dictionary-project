@@ -1,7 +1,7 @@
 import React from "react";
 import Synonyms from "./Synonyms";
 import Antonyms from "./Antonyms";
-import "./Meaning.css"
+import "./Meaning.css";
 
 export default function Meaning(props) {
   //   console.log(props.meaning);
@@ -12,7 +12,7 @@ export default function Meaning(props) {
       <div className="accordion-item">
         <div className="accordion-header">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button py-1 collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target={collapseIndexTarget}

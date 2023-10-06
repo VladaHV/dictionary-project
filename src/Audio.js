@@ -3,22 +3,20 @@ import useSound from "use-sound";
 
 export default function Audio(props) {
   let url = props.audio;
-  const [play] = useSound(url, { volume: 0.5 });
+  const [play] = useSound(url);
 
   function playAudio(event) {
     event.preventDefault();
+    console.log(url);
+
     play();
   }
 
   if (props.audio) {
     return (
-      <span>
-        <button
-          type="button"
-          className="btn btn-secondary me-3"
-          onClick={playAudio}
-        >
-          <i className="fa-solid fa-circle-play"></i>
+      <span className="justify-content-center icon">
+        <button type="button" className="btn" onClick={playAudio}>
+          <i className="fa-regular fa-circle-play"></i>
         </button>
       </span>
     );
