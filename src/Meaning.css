@@ -1,7 +1,22 @@
-.Meaning{
-		box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
-
+.Meaning {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
 }
+
+.Meaning h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Meaning .example {
+  font-size: 14px;
+  font-style: italic;
+  color: #70757a;
+}
+
 .accordion-button {
   color: #264149;
+}
+
+.Meaning ul {
+  list-style:circle;
 }

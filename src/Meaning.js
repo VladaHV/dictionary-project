@@ -35,9 +35,8 @@ export default function Meaning(props) {
                   <ul>
                     <li> {def.definition}</li>
                     {def.example ? (
-                      <div>
-                        <strong>Example: </strong>
-                        <em>{def.example}</em>
+                      <div className="example">
+                        {def.example}
                       </div>
                     ) : null}
                   </ul>

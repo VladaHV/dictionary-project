@@ -1,7 +1,15 @@
 .Phonetics {
   font-size: 20px;
+}
+
+.Phonetics .containerAuTe {
   box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
   background: white;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 5px;
+    text-align: center;
+
 }
 
 .Phonetics .btn {
@@ -11,8 +19,7 @@
   margin-right: 10px;
 }
 
-.Phonetics .btn:hover
- {
+.Phonetics .btn:hover {
   background-color: #6f6274;
   color: white;
 }
@@ -20,3 +27,5 @@
 .Phonetics .icon {
   color: #6f6274;
 }
+
+

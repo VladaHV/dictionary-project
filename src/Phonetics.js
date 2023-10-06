@@ -7,13 +7,13 @@ export default function Phonetics(props) {
   if (props.props.phonetics.length) {
 	  return (
       <div className="container px-4">
-        <div className="Phonetics mb-3 row text-center gx-5">
+        <div className="Phonetics mb-3 text-center align-center">
           {props.props.phonetics.map(function (phonetics, index) {
             return (
-              <div key={index} className="mb-2 col">
+              <span key={index} className="mb-2 containerAuTe ">
                 <Audio audio={phonetics.audio} />
                 {phonetics.text}
-              </div>
+              </span>
             );
           })}
         </div>

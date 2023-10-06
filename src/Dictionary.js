@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Dictionary.css";
 import Results from "./Results";
-import logo from "./img/05june22_phonebook_icon_04.png";
+// import logo from "./img/05june22_phonebook_icon_04.png";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -53,7 +53,7 @@ export default function Dictionary(props) {
                 <div className="row justify-content-center">
                   <input
                     type="search"
-                    placeholder="Type for searching"
+                    placeholder="What word do you want to look up?"
                     autoFocus={true}
                     onChange={handleKeywordChange}
                     className="col-9 input-str"

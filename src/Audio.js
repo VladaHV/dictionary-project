@@ -1,15 +1,16 @@
 import React from "react";
-import useSound from "use-sound";
+import { useGlobalAudioPlayer } from "react-use-audio-player";
+
+//https://www.npmjs.com/package/react-use-audio-player
 
 export default function Audio(props) {
   let url = props.audio;
-  const [play] = useSound(url);
+  const { load } = useGlobalAudioPlayer();
 
   function playAudio(event) {
     event.preventDefault();
     console.log(url);
-
-    play();
+    load(url, { autoplay: true });
   }
 
   if (props.audio) {
@@ -24,3 +25,6 @@ export default function Audio(props) {
     return null;
   }
 }
+
+// import ReactAudioPlayer from "react-audio-player";
+//   <ReactAudioPlayer src={url} controls  />
