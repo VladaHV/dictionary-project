@@ -3,7 +3,8 @@
   font-weight: 800;
 }
 
-.img {
-  /* max-width: 200px; */
+.logo {
+  max-width: 75%;
+  height: 75%;
   margin: 0 auto;
 }

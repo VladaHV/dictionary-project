@@ -1,4 +1,9 @@
+.Results {
+  background: white;
+} 
+
 .Results h2 {
   color: #212529;
   font-weight: 800;
+
 }

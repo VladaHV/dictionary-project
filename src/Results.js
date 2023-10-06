@@ -7,8 +7,8 @@ export default function Results(props) {
   // console.log(props.results);
   if (props.results) {
     return (
-      <div className="Results mx-5">
-        <h2 className="mb-4">{props.results.word}</h2>
+      <div className="Results card p-4 ">
+        <h2 className="mb-4 text-center">{props.results.word}</h2>
         <Phonetics props={props.results} />
         <div className="accordion" id="accordionExample">
           {props.results.meanings.map(function (meaning, index) {
