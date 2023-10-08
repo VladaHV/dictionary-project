@@ -7,8 +7,8 @@ export default function Results(props) {
   // console.log(props.results);
   if (props.results) {
     return (
-      <div className="Results card p-4 ">
-        <h2 className="mb-4 text-center">{props.results.word}</h2>
+      <section className="Results card mb-3">
+        <h2 className="mb-2 text-center">{props.results.word}</h2>
         <Phonetics props={props.results} />
         <div className="accordion" id="accordionExample">
           {props.results.meanings.map(function (meaning, index) {
@@ -18,8 +18,9 @@ export default function Results(props) {
               </div>
             );
           })}
-        </div>
-      </div>
+			</div>
+			
+      </section>
     );
   } else {
     return null;

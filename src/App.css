@@ -1,12 +1,12 @@
 .App {
-  /* position: relative; */
-  height: 600;
+  position: relative;
+  margin: 0 auto;
 
   /* extra style to center the content */
   display: flex;
   align-items: center;
-  justify-content: center;
 }
+
 .App::before {
   content: "";
   position: absolute;
@@ -15,11 +15,20 @@
   bottom: 0;
   right: 0;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.2;
   background-image: url("./img/flat-background-template-world-book-day-celebration_23-2150216666.jpg");
     /* background-image: url("./img/mathematics-with-numbers-notebook.jpg"); */
 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
+}
+
+.App .container {
+	  max-width: 960px;
+
 }
 
 .App-footer {

@@ -10,13 +10,21 @@
 }
 
 .input-str {
-	border-radius: 6px;
-	border: 1px solid #ddd;
-	color: #333;
-	font-weight: 800;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  color: #333;
+  font-weight: 800;
 }
 
 .input-btn {
-		font-weight: 800;
+  font-weight: 800;
+}
 
+.showRes {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(251, 222, 238) 15.6%,
+    rgb(206, 201, 226) 80.3%
+  );
+  border-radius: 16px;
 }

@@ -9,7 +9,7 @@ export default function Audio(props) {
 
   function playAudio(event) {
     event.preventDefault();
-    console.log(url);
+    // console.log(url);
     load(url, { autoplay: true });
   }
 
