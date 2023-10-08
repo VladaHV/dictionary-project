@@ -7,19 +7,23 @@ import "@splidejs/react-splide/css";
 export default function Photos(props) {
   if (props.photos) {
     return (
-      <section className="Photos">
-        <div className="row">
+        <section className="Photos">
           <Splide
             options={{
               rewind: true,
-              //   width: 800,
-              perPage: 1,
-              type: "slide", //slide, fade, loop
+              //   //   width: 800,
+              // perPage: 2,
               //   padding: "5%",
-              //   height: "100%",
-              // 	autoplay: true,
-              //   interval: 10000,
-              gap: "1rem",
+              //   //   height: "100%",
+              //   // 	autoplay: true,
+              //   //   interval: 10000,
+              //   gap: "1rem",
+              type: "loop", //slide, fade, loop
+              paginationDirection: "ttb", //'ltr', | 'rtl' | 'ttb'
+              direction: "ttb",
+              height: "25rem",
+              focus: "center",
+              autoHeight: true,
             }}
             className="my-carousel"
             aria-label="My Favorite Images"
@@ -28,28 +32,21 @@ export default function Photos(props) {
             {props.photos.map(function (photo, index) {
               let desc = `photos${index}`;
               let currentPhoto = photo.src.landscape;
-				return (
-          //   <div className="col-3">
-          //     <img
-          //       key={index}
-          //       src={currentPhoto}
-          //       className="img-fluid"
-          //       alt={desc}
-          //     />
-          //   </div>
-            <SplideSlide>
-              <img
-                key={index}
-                className="img-fluid"
-                src={currentPhoto}
-                alt={desc}
-              />
-            </SplideSlide>
-        );
+              return (
+                //   <div className="col-3">
+                //   </div>
+                <SplideSlide>
+                  <img
+                    key={index}
+                    className="img-fluid"
+                    src={currentPhoto}
+                    alt={desc}
+                  />
+                </SplideSlide>
+              );
             })}
           </Splide>
-        </div>
-      </section>
+        </section>
     );
   } else return null;
 }
