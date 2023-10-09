@@ -5,7 +5,6 @@
   /* extra style to center the content */
   display: flex;
   align-items: center;
-  
 }
 
 .App::before {
@@ -17,13 +16,12 @@
   right: 0;
   z-index: -1;
   opacity: 0.6;
-  background-image: url("./img/bg-pexels-arturo-añez-13820897.jpg");
+  background-image: url("./img/bg-picture.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
-  
 }
 
 .App .container {
@@ -32,8 +30,8 @@
   margin-bottom: 20px;
 }
 
-.App .bg-style{
-	 background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); 
+.App .bg-style {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 .App-footer {
