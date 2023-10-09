@@ -14,9 +14,13 @@
 }
 
 .accordion-button {
-  color: #264149;
+  color: #726763;
 }
 
 .Meaning ul {
   list-style:circle;
+}
+
+.partOfSpeech {
+	color: #726763;
 }

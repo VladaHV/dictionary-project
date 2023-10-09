@@ -5,11 +5,11 @@ import Dictionary from "./Dictionary";
 export default function App() {
   return (
     <div className="App">
-      <div className="mt-5 container">
+      <div className="mt-5 mb-5 container bg-style">
         <main>
           <Dictionary defaultKeyword="dictionary"/>
         </main>
-        <footer className="App-footer">
+        <footer className="App-footer pb-4">
           <small>
             Coded by{" "}
             <a href="https://gregarious-figolla-9cbc1d.netlify.app/">

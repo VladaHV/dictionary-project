@@ -4,9 +4,8 @@ import Antonyms from "./Antonyms";
 import "./Meaning.css";
 
 export default function Meaning(props) {
-  //   console.log(props.meaning);
-  let collapseIndex = `collapse${props.index}`;
-  let collapseIndexTarget = `#collapse${props.index}`;
+  let collapseIndex = `flush-collapse${props.index}`;
+  let collapseIndexTarget = `#flush-collapse${props.index}`;
   return (
     <div className="Meaning">
       <div className="accordion-item">
@@ -19,7 +18,7 @@ export default function Meaning(props) {
             aria-expanded="false"
             aria-controls={collapseIndex}
           >
-            <h3> {props.meaning.partOfSpeech} </h3>
+            <h3 className="partOfSpeech"> {props.meaning.partOfSpeech} </h3>
           </button>
         </div>
         <div

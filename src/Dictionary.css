@@ -1,30 +1,54 @@
 .Dictionary h1 {
   font-family: "Playfair Display", serif;
   font-weight: 800;
+  /* background: radial-gradient(
+    780px at 37.8% 100.3%,
+    rgb(19, 55, 115) 2.2%,
+    rgb(32, 7, 80) 20.2%,
+    rgb(27, 88, 111) 58.6%,
+    rgb(115, 88, 44) 75%,
+    rgb(99, 19, 90) 89.6%,
+    rgb(12, 51, 76) 96.1%
+  ); */
+  background: linear-gradient(
+    87.4deg,
+    rgb(35, 33, 22) 1.9%,
+    #91847f 40.7%,
+    rgb(83, 54, 54) 100.5%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.logo {
+/* .logo {
   max-width: 75%;
   height: 75%;
   margin: 0 auto;
-}
+} */
 
 .input-str {
   border-radius: 6px;
   border: 1px solid #ddd;
   color: #333;
   font-weight: 800;
+  font-size: 20px;
 }
 
 .input-btn {
   font-weight: 800;
+  background: #91847f;
+  color: #fff;
+  font-size: 20px;
+  border: 2px solid #91847f;
 }
 
-.showRes {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(251, 222, 238) 15.6%,
-    rgb(206, 201, 226) 80.3%
-  );
-  border-radius: 16px;
+.input-btn:hover {
+  background: #fff;
+  color: #91847f;
+  border: 2px solid #91847f;
+  transition: 0.3s;
+}
+
+.progressBar {
+  margin: 0 auto;
 }
